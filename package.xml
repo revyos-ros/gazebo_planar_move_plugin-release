@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>gazebo_planar_move_plugin</name>
+  <version>1.0.2</version>
+  <description>Planar move of objects in gazebo</description>
+  <maintainer email="Jason.Cochrane@boeing.com">Boeing</maintainer>
+  <author>Boeing</author>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>boost</depend>
+  <depend>gazebo_dev</depend>
+  <depend>gazebo_ros</depend>
+  <depend>rclcpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+
+  <test_depend>launch_testing_ament_cmake</test_depend>
+  <test_depend>ros2launch</test_depend>
+  <test_depend>robot_state_publisher</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <gazebo_ros plugin_path="${prefix}/lib" gazebo_media_path="${prefix}" />
+  </export>
+</package>
