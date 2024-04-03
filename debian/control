@@ -1,0 +1,12 @@
+Source: ros-humble-gazebo-planar-move-plugin
+Section: misc
+Priority: optional
+Maintainer: Boeing <Jason.Cochrane@boeing.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, ros-humble-ament-cmake, ros-humble-gazebo-dev, ros-humble-gazebo-ros, ros-humble-geometry-msgs, ros-humble-launch-testing-ament-cmake <!nocheck>, ros-humble-nav-msgs, ros-humble-rclcpp, ros-humble-robot-state-publisher <!nocheck>, ros-humble-ros2launch <!nocheck>, ros-humble-sensor-msgs, ros-humble-tf2-geometry-msgs, ros-humble-tf2-ros, ros-humble-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-gazebo-planar-move-plugin
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, ros-humble-gazebo-dev, ros-humble-gazebo-ros, ros-humble-geometry-msgs, ros-humble-nav-msgs, ros-humble-rclcpp, ros-humble-sensor-msgs, ros-humble-tf2-geometry-msgs, ros-humble-tf2-ros, ros-humble-ros-workspace
+Description: Planar move of objects in gazebo
